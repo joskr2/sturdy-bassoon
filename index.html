@@ -1,53 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <title>Tailwind demo</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Blog con Tailwind CSS</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-
-<body class="min-h-screen bg-gray-100">
+<body class="bg-gray-100">
+  <!-- Encabezado -->
   <header class="bg-blue-500 text-white py-4">
     <div class="container mx-auto">
-      <h1 class="text-lg font-bold">Mi página de inicio con Tailwind CSS</h1>
+      <h1 class="text-xl font-bold">Mi blog con Tailwind CSS</h1>
     </div>
   </header>
+
+  <!-- Lista de publicaciones -->
   <main class="container mx-auto mt-8">
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="bg-white p-4 shadow-md rounded-lg">
-        <h2 class="text-blue-500 text-xl font-bold">Sección 1</h2>
-        <p class="mt-2">Contenido de la sección 1.</p>
+    <section class="space-y-4">
+      <!-- Publicación 1 -->
+      <div class="bg-white p-4 shadow-md rounded-md">
+        <h2 class="text-blue-500 text-xl font-bold">Título de la publicación 1</h2>
+        <p class="mt-2">Resumen de la publicación 1. Aquí puedes incluir una descripción breve y atractiva para que los visitantes quieran leer más.</p>
+        <a class="mt-4 inline-block text-blue-500 hover:text-blue-700" href="#">Leer más</a>
       </div>
-	<div class="bg-white p-4 shadow-md rounded-md">
-    <h2 class="text-blue-500 text-xl font-bold">Sección 2</h2>
-    <p class="mt-2">Contenido de la sección 2.</p>
-  </div>
-	</section>
-</main>
+
+      <!-- Publicación 2 -->
+      <div class="bg-white p-4 shadow-md rounded-md">
+        <h2 class="text-blue-500 text-xl font-bold">Título de la publicación 2</h2>
+        <p class="mt-2">Resumen de la publicación 2. Aquí puedes incluir una descripción breve y atractiva para que los visitantes quieran leer más.</p>
+        <a class="mt-4 inline-block text-blue-500 hover:text-blue-700" href="#">Leer más</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
   <footer class="bg-blue-500 text-white py-4 mt-8">
     <div class="container mx-auto">
-      <p class="text-md">Derechos reservados &copy; 2023</p>
+      <p class="text-sm">Derechos reservados &copy; 2023</p>
     </div>
   </footer>
-
-
-  <div class="max-w-sm mx-auto m-8">
-    <div class="bg-white shadow-md rounded-md overflow-hidden">
-      <!-- Imagen del producto -->
-      <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300x200" alt="Producto">
-      
-      <!-- Contenido de la tarjeta -->
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">Nombre del producto</h2>
-        <p class="mt-2 text-gray-600">Descripción breve del producto. Aquí puedes incluir características y detalles importantes.</p>
-        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-blue-500">
-          Agregar al carrito
-        </button>
-      </div>
-    </div>
-  </div>
-
+</body>
 </html>
