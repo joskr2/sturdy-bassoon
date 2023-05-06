@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog con Tailwind CSS</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <title>Barra de navegación responsiva con Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100">
-  <!-- Encabezado -->
-  <header class="bg-blue-500 text-white py-4">
-    <div class="container mx-auto">
-      <h1 class="text-xl font-bold">Mi blog con Tailwind CSS</h1>
+  <!-- Barra de navegación -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-4 py-2">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="text-blue-500 text-xl font-bold">Logo</div>
+
+        <!-- Navegación -->
+        <div class="hidden md:flex space-x-4">
+          <a class="text-gray-800 hover:text-blue-500" href="#inicio">Inicio</a>
+          <a class="text-gray-800 hover:text-blue-500" href="#servicios">Servicios</a>
+          <a class="text-gray-800 hover:text-blue-500" href="#contacto">Contacto</a>
+        </div>
+
+        <!-- Botón del menú en dispositivos móviles -->
+        <button  title="button" class="md:hidden text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-  </header>
 
-  <!-- Lista de publicaciones -->
-  <main class="container mx-auto mt-8">
-    <section class="space-y-4">
-      <!-- Publicación 1 -->
-      <div class="bg-white p-4 shadow-md rounded-md">
-        <h2 class="text-blue-500 text-xl font-bold">Título de la publicación 1</h2>
-        <p class="mt-2">Resumen de la publicación 1. Aquí puedes incluir una descripción breve y atractiva para que los visitantes quieran leer más.</p>
-        <a class="mt-4 inline-block text-blue-500 hover:text-blue-700" href="#">Leer más</a>
-      </div>
-
-      <!-- Publicación 2 -->
-      <div class="bg-white p-4 shadow-md rounded-md">
-        <h2 class="text-blue-500 text-xl font-bold">Título de la publicación 2</h2>
-        <p class="mt-2">Resumen de la publicación 2. Aquí puedes incluir una descripción breve y atractiva para que los visitantes quieran leer más.</p>
-        <a class="mt-4 inline-block text-blue-500 hover:text-blue-700" href="#">Leer más</a>
-      </div>
-    </section>
+  </nav>
+  <!-- Contenido -->
+  <main class="pt-16">
+    <!-- Aquí va el contenido de la página -->
   </main>
-
-  <!-- Pie de página -->
-  <footer class="bg-blue-500 text-white py-4 mt-8">
-    <div class="container mx-auto">
-      <p class="text-sm">Derechos reservados &copy; 2023</p>
-    </div>
-  </footer>
 </body>
+
 </html>
