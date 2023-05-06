@@ -3,38 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería de imágenes responsiva con Tailwind CSS</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <title>Formulario de contacto responsivo con Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-  <!-- Galería de imágenes -->
+  <!-- Formulario de contacto -->
   <main class="container mx-auto mt-8 p-4">
-    <h1 class="text-2xl font-bold mb-4">Galería de imágenes responsiva</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <!-- Imagen 1 -->
-      <div class="bg-white p-4 shadow-md rounded-md">
-        <img class="w-full h-48 object-cover rounded-md" src="https://via.placeholder.com/640x480" alt="Imagen 1">
-        <h2 class="text-blue-500 text-xl font-bold mt-2">Título de la imagen 1</h2>
+    <h1 class="text-2xl font-bold mb-4">Formulario de contacto</h1>
+    <form class="bg-white p-4 shadow-md rounded-md">
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="nombre">Nombre</label>
+        <input class="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:border-blue-500" type="text" id="nombre" placeholder="Ingrese su nombre">
       </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="email">Correo electrónico</label>
+        <input class="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:border-blue-500" type="email" id="email" placeholder="Ingrese su correo electrónico">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="mensaje">Mensaje</label>
+        <textarea class="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:border-blue-500" id="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
+      </div>
+      <button class="w-full py-2 px-4 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700" type="submit">Enviar</button>
+</form>
 
-      <!-- Imagen 2 -->
-      <div class="bg-white p-4 shadow-md rounded-md">
-        <img class="w-full h-48 object-cover rounded-md" src="https://via.placeholder.com/640x480" alt="Imagen 2">
-        <h2 class="text-blue-500 text-xl font-bold mt-2">Título de la imagen 2</h2>
-      </div>
-
-      <!-- Imagen 3 -->
-      <div class="bg-white p-4 shadow-md rounded-md">
-        <img class="w-full h-48 object-cover rounded-md" src="https://via.placeholder.com/640x480" alt="Imagen 3">
-        <h2 class="text-blue-500 text-xl font-bold mt-2">Título de la imagen 3</h2>
-      </div>
-
-      <!-- Imagen 4 -->
-      <div class="bg-white p-4 shadow-md rounded-md m-auto">
-        <img class="w-full h-48 object-cover rounded-md" src="https://via.placeholder.com/640x480" alt="Imagen 4">
-        <h2 class="text-blue-500 text-xl font-bold mt-2">Título de la imagen 4</h2>
-      </div>
-    </div>
   </main>
 </body>
 </html>
